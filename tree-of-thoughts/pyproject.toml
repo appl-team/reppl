@@ -1,0 +1,30 @@
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[project]
+name = "re-tot"
+version = "0.1.0"
+description = "Reimplementing Tree-of-thought for LLMs"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [
+    { name = "Honghua Dong", email = "dhh19951@gmail.com" }
+]
+dependencies = [
+    "applang>=0.2.1",
+    "pandas>=1.0.0",
+    "sympy>=1.6.0",
+    "loguru>=0.5.0",
+    "dill>=0.3.9",
+]
+
+[project.scripts]
+tot-solve = "tot.cli:main"
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "N"]

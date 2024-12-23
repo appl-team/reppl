@@ -1,0 +1,16 @@
+settings:
+  logging:
+    display:
+      llm_cost: true
+  concurrency:
+    llm_max_workers: 100
+
+default_servers:
+  default: gpt4o-t07
+  small: gpt-4o-mini
+  large: gpt-4o
+
+servers:
+  gpt4o-t07:
+    model: gpt-4o
+    temperature: 0.7

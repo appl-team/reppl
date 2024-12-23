@@ -2,6 +2,7 @@ settings:
   logging:
     display:
       llm_cost: true
+      # llm_cache: true
   concurrency:
     llm_max_workers: 100
 

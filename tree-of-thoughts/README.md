@@ -1,6 +1,8 @@
 # Tree of Thoughts Re-implementation
 
-This is a re-implementation of the Tree of Thoughts (ToT) reasoning framework using [APPL](https://github.com/appl-team/appl). The implementation focuses on solving the Game of 24 task, where the goal is to construct an expression that evaluates to 24 using four given numbers and basic arithmetic operations.
+This is a re-implementation of the [Tree of Thoughts (ToT)](https://arxiv.org/abs/2305.10601) reasoning framework using [APPL](https://github.com/appl-team/appl).
+The implementation focuses on solving the Game of 24 task, where the goal is to construct an expression that evaluates to 24 using four given numbers and basic arithmetic operations.
+The implementation is based on the the [official code](https://github.com/princeton-nlp/tree-of-thought-llm).
 
 ## Features
 
@@ -61,7 +63,7 @@ appltrace <the-path-to-the-trace-file>
 - `--task-start-index`: Start index of tasks, inclusive (default: 900)
 - `--task-end-index`: End index of tasks, exclusive (default: 901)
 - `--n-propose-sample`: Number of proposals to generate (default: 8)
-- `--n-evaluate-sample`: Number of evaluations to generate (default: 2)
+- `--n-evaluate-sample`: Number of evaluations to generate (default: 2), Note the original ToT paper uses 3 evaluations.
 - `--n-select-sample`: Number of proposals to select (default: 5)
 
 ## Example Results

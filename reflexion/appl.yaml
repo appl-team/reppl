@@ -1,0 +1,21 @@
+settings:
+  concurrency:
+    llm_max_workers: 50 # set to smaller when RateLimitError occurs
+
+default_servers:
+  default: gpt-4o-mini-t0
+  # default: gpt-4o-t0
+  # default: claude-3-5-sonnet-t0
+
+servers:
+  gpt-4o-mini-t0:
+    model: gpt-4o-mini
+    temperature: 0.0
+  gpt-4o-t0:
+    model: gpt-4o-2024-11-20
+    temperature: 0.0
+  claude-3-5-sonnet-t0:
+    model: claude-3-5-sonnet-20241022
+    temperature: 0.0
+    # num_retries: 30
+    # use num_retries when RateLimitError occurs

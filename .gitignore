@@ -4,6 +4,7 @@ dumps/
 logs/
 *.tmp
 tmp.*
+tmp
 
 # Mac
 **/.DS_Store

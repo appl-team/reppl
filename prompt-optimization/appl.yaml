@@ -1,0 +1,3 @@
+default_servers:
+  small: gpt-4o-mini
+  large: gpt-4o
